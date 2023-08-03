@@ -1,0 +1,23 @@
+/*
+    BASIC FUNCTIONALITY OF THIS APPLICATION
+    1.SPLASH SCREEN
+    2.HOME Page
+        2.1.Admin Login
+            2.1.1.Add New Admin...DONE
+            2.1.2.Create new Tournament..DONE
+                2.1.2.1.Add sports to tournament..DONE
+
+            2.1.3.Update Existing Tournament
+                2.1.3.1.Update details of tournament
+                    2.1.3.1.1.Modify values of tournament
+                    2.1.3.1.2.Delete the tournament
+                2.1.3.2.Update details of sport of that tournament
+                    2.1.3.2.1.Modify values of sport of tournament
+                    2.1.3.2.2.Delete the sport of tournament
+
+        2.2.User Login
+            2.2.1.View All tournaments...DONE
+                2.2.1.1.View All Sports...DONE
+                    2.2.1.1.1.Add Team and Players to the team and to the sport!..DONE
+
+*/

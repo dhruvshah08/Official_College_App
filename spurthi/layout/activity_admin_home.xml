@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".Admin_home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+        <Button
+            android:id="@+id/btnNewAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Admin"
+            android:fontFamily="@font/button_font"
+            android:letterSpacing="0.3"
+            android:layout_marginTop="150dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/button_style"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="168dp"
+            />
+        <Button
+            android:id="@+id/btnNewTournament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/button_font"
+            android:letterSpacing="0.3"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/button_style"
+            android:text="Create New Tournament"/>
+
+        <Button
+            android:id="@+id/btnUpdateTournament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:letterSpacing="0.3"
+            android:fontFamily="@font/button_font"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/button_style"
+            android:text="Update Tournament"/>
+    </LinearLayout>
+
+</LinearLayout>

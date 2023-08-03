@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background6"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="650dp"
+            android:src="@drawable/bg1"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAdminLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/action_bar_color"
+                android:background="@drawable/home_dr"
+                android:padding="20dp"
+                android:fontFamily="@font/button_font"
+                android:textSize="20dp"
+                android:text="Join as Admin  " />
+
+            <Button
+                android:id="@+id/btnUserLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:fontFamily="@font/button_font"
+                android:textColor="@color/action_bar_color"
+                android:padding="20dp"
+                android:textSize="20dp"
+                android:text="Join as User  " />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

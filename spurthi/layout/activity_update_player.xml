@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background6"
+    android:padding="10dp"
+    tools:context=".NewPlayer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txtEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:fontFamily="serif"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:fontFamily="serif"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Team Name"
+            android:fontFamily="serif"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Player"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Player Details:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtPlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtPlayerYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Year"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnUpdatePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/button_font"
+            android:letterSpacing="0.5"
+            android:textSize="20dp"
+            android:text="Update Player" />
+
+        <Button
+            android:id="@+id/btnHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:fontFamily="@font/rest_buttons_font"
+            android:letterSpacing="0.5"
+            android:text="HOME" />
+    </LinearLayout>
+
+</LinearLayout>

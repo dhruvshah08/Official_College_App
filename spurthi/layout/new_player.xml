@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    android:orientation="vertical"
+    tools:context=".NewPlayer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+        <LinearLayout
+            android:id="@+id/lnr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Event Name"
+                android:fontFamily="serif"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:fontFamily="serif"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Team Name"
+                android:fontFamily="serif"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textViewPlayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Player Details:"
+                android:fontFamily="serif"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtPlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter full name"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtPlayerYear"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="year"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_style"
+            android:padding="20dp"
+            android:fontFamily="@font/button_font"
+            android:letterSpacing="0.5"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:text="Add Player" />
+    </LinearLayout>
+</LinearLayout>

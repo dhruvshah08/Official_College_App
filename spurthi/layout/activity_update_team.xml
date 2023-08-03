@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    android:orientation="vertical"
+    tools:context=".Team_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Sports Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Name:"
+                android:fontFamily="serif"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/txtTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/branches"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter Team Name"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdateTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/button_font"
+            android:letterSpacing="0.4"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:background="@drawable/button_style"
+            android:text="Update Team" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <ListView
+            android:id="@+id/listOfPlayers"
+            android:layout_width="281dp"
+            android:layout_height="match_parent"
+            android:background="#D3E3E9"/>
+
+        <ImageButton
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/add1"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

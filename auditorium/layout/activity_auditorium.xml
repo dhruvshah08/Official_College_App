@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1_background"
+    tools:context=".auditorium">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/colorTransparent"
+            android:orientation="vertical">
+
+
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:padding="10dp" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorPurple"
+        android:fontFamily="@font/fanwood_text"
+        android:text="VESP Auditorium"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fanwood_text"
+        android:text=" - 150 sq feet of seating"
+        android:id="@+id/intro1"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginLeft="22dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="85dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fanwood_text"
+        android:text=" - Air Conditioned and Spacious"
+        android:id="@+id/intro2"
+        android:layout_below="@id/intro1"
+        android:layout_marginLeft="22dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fanwood_text"
+        android:text=" - Suitable for Conferences and Seminars"
+        android:id="@+id/intro3"
+        android:layout_below="@id/intro2"
+        android:layout_marginLeft="22dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/intro3"
+        android:layout_marginTop="75dp"
+        android:text="Specifications"
+        android:id="@+id/features"
+        android:background="@drawable/features_button"
+
+        android:layout_marginLeft="60dp"/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/intro3"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="75dp"
+        android:layout_toRightOf="@id/features"
+        android:background="@drawable/avail_button"
+        android:text="Check Availability" />
+
+
+
+    <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="750dp"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout_btn"
+        android:layout_below="@+id/features"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>

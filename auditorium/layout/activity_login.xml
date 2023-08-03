@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1_background"
+    tools:context=".login">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorPurple"
+        android:textStyle="bold"
+        android:textSize="45sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorPurple"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+
+        android:textColorHint="@color/colorPurple"
+        android:tooltipText="Enter your email."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_username"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorPurple"
+        android:hint="Password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPurple"
+        android:tooltipText="Enter your password."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_username" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorTransparent"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_signup_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/login_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:text="Forgotten your login details?"
+        android:textColor="#0000ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <TextView
+        android:id="@+id/login_signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SignUp"
+        android:textColor="#0000ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_forgot_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

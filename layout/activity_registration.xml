@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1_background"
+    tools:context=".registration">
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/regis_dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+
+        android:layout_below="@+id/regis_dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/regis_user"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/regis_user"
+        android:layout_marginTop="50dp"
+        android:id="@+id/regis_email"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/regis_email"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/regis_pass"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/regis_pass"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:id="@+id/regis_con_pass"/>
+
+
+    <Spinner
+        android:id="@+id/regis_spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/regis_dp"
+        android:layout_toRightOf="@id/regis_user"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="50dp"
+        />
+    <Button
+        android:id="@+id/regis_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/regis_con_pass"
+        />
+
+
+
+
+
+
+</RelativeLayout>
